@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GardenDrop — dostawa nasion dronami</title>
+<meta name="description" content="GardenDrop: kurierska dostawa nasion i ładunków ogrodniczych ciężkimi dronami na działki ROD i do przemysłu. Zamówienie z kodem QR.">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav>
+  <b>Garden<i>Drop</i></b>
+  <a class="l" href="#about">O nas</a><a class="l" href="#order">Zamówienie</a><a class="l" href="#safety">Bezpieczeństwo</a>
+  <div class="lang" role="group" aria-label="Language"><button type="button" data-l="pl" aria-pressed="true">PL</button><button type="button" data-l="en" aria-pressed="false">EN</button></div><a class="btn" href="#contact">Zamów</a>
+</nav>
+
+<header class="hero">
+  <div class="leaf a" data-s=".18"></div><div class="leaf b" data-s="-.12"></div><div class="leaf c" data-s=".3"></div><div class="sun" data-s="-.22"></div>
+  <div class="wrap">
+    <div>
+      <h1>Nasiona lądują <span>prosto na grządkę</span></h1>
+      <p>GardenDrop dostarcza paczki dużymi dronami towarowymi: na działki ROD, do szklarni i na obiekty przemysłowe. Bez korków i bez czekania na kuriera przy furtce.</p>
+      <div class="cta"><a class="btn" href="#contact">Zamów dostawę</a><a class="btn o" href="#order">Jak to działa</a></div>
+    </div>
+    <div class="logo" data-s="-.06"><img src="img/logo.jpg" alt="Logo GardenDrop: dron z paczką nad psem w ogrodzie" width="560" height="560"></div>
+  </div>
+</header>
+
+<div class="mq" aria-hidden="true"><div>
+<span>Nasiona dla ROD</span><span>Dostawa dronami</span><span>Zamówienie z kodem QR</span><span>Ładunki przemysłowe</span><span>Transport elektryczny</span><span>Nasiona dla ROD</span><span>Dostawa dronami</span><span>Zamówienie z kodem QR</span><span>Ładunki przemysłowe</span><span>Transport elektryczny</span>
+</div></div>
+
+<section id="about"><div class="wrap">
+  <div class="kick rv">O firmie</div>
+  <h2 class="rv">Kurier, który leci nad drogami</h2>
+  <p class="lead rv">Jesteśmy kurierem nowego typu. Nasze duże drony niosą ładunki powietrzem prosto do odbiorcy. Naszą główną specjalizacją są nasiona i materiał siewny dla działkowców z ROD, ale wozimy też ładunki dla przemysłu.</p>
+  <div class="bento">
+    <div class="cell c1 rv"><h3>Nasiona dla ROD</h3><p>Sezon nie czeka. Nasiona, rozsada i nawozy docierają na Twoją działkę jednym lotem, a paczka ląduje tuż przy grządce.</p></div>
+    <div class="cell c2 rv"><div class="ico">🏭</div><h3>Dla przemysłu</h3><p>Regularne loty między magazynami, halami i placami budowy.</p></div>
+    <div class="cell c3 rv"><div class="big">QR</div><p style="margin-top:12px">Każdy dron i każda paczka są powiązane kodem QR.</p></div>
+    <div class="cell c4 rv"><div class="ico">🚁</div><h3>Duże drony</h3><p>Towarowe multikoptery są stworzone do dużych paczek, a nie do drobiazgów w kopercie.</p></div>
+    <div class="cell c5 rv"><div class="ico">🌱</div><h3>Ciszej i czyściej</h3><p>Napęd elektryczny, prosta trasa i ani jednego auta w drodze na Twoją działkę.</p></div>
+  </div>
+</div></section>
+
+<section class="band" aria-label="Pole z lotu ptaka">
+  <div class="rows" data-s=".25"></div><div class="rows r2" data-s="-.15"></div>
+  <h2 class="rv">Od magazynu do grządki w linii prostej</h2>
+</section>
+
+<section id="order"><div class="wrap">
+  <div class="kick rv">Łatwe zamawianie</div>
+  <h2 class="rv">Trzy kroki i paczka już w powietrzu</h2>
+  <div class="steps">
+    <div class="step rv"><h3>Wybierz ładunek</h3><p>Wskaż, co mamy dowieźć: nasiona, rozsadę lub ładunek przemysłowy.</p></div>
+    <div class="step rv"><h3>Zaznacz punkt</h3><p>Zaznacz miejsce lądowania na mapie. Dla działki w ROD wystarczy numer alejki i działki.</p></div>
+    <div class="step rv"><h3>Zeskanuj kod QR</h3><p>Kod łączy paczkę z dronem i potwierdza odbiór w chwili lądowania.</p></div>
+  </div>
+  <div class="qr rv">
+    <div class="qrbox"><svg viewBox="0 0 21 21" shape-rendering="crispEdges" id="qrsvg" aria-label="Przykładowy kod QR"></svg><div class="scan"></div></div>
+    <div>
+      <h3>Kod QR to klucz do Twojej paczki</h3>
+      <p>Dron wydaje ładunek tylko osobie, której kod się zgadza. Kliknij przycisk, aby zobaczyć, jak to działa.</p>
+      <p><a class="btn" href="#order" id="scanBtn" style="margin-top:20px">Skanuj kod</a></p>
+      <div id="drop" role="status" aria-live="polite"></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="safety" style="background:var(--bg2)"><div class="wrap">
+  <div class="kick rv">Bezpieczeństwo</div>
+  <h2 class="rv">Ładunek pod kontrolą na każdym metrze</h2>
+  <div class="safe">
+    <div class="cell rv"><div class="ico">📡</div><h3>Śledzenie na żywo</h3><p>Widzisz drona i status paczki w czasie rzeczywistym.</p></div>
+    <div class="cell rv"><div class="ico">🔐</div><h3>Wydanie za kodem</h3><p>Bez zgodnego kodu QR ładunek nie zostanie zrzucony.</p></div>
+    <div class="cell rv"><div class="ico">🛰️</div><h3>Bezpieczne trasy</h3><p>Omijanie ludzi, dróg i budynków, lądowanie tylko w zaznaczonym punkcie.</p></div>
+    <div class="cell rv"><div class="ico">🔋</div><h3>Zapas i rezerwa</h3><p>Kontrola baterii przed lotem i powrót do bazy przy każdej awarii.</p></div>
+  </div>
+</div></section>
+
+<section id="contact" style="padding-bottom:0"><div class="wrap">
+  <div class="final rv">
+    <h2>Gotowy na pierwszą paczkę?</h2>
+    <p>Napisz, co i dokąd mamy dostarczyć. Dobierzemy drona i wyliczymy lot.</p>
+    <a class="btn" href="mailto:hello@gardendrop.example">Napisz do nas</a>
+  </div>
+</div></section>
+
+<footer><div class="wrap"><div><img class="fav" src="img/favicon-32.png" alt="">GardenDrop</div><div>© 2026 GardenDrop. Dostawa nasion dronami.</div></div></footer>
+
+<script src="js/script.js" defer></script>
+</body>
+</html>
