@@ -90,8 +90,19 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 .g3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:56px}
 .warn{margin:36px 0 0;padding:18px 22px;border-radius:20px;border:1.5px solid #e5473c;background:color-mix(in srgb,#e5473c 12%,var(--card))}
 .plan{margin:34px 0 0;max-width:46em;color:var(--mute)}
-@media(max-width:1100px){nav a.l{display:none}}
+@media(max-width:1240px){nav a.l{display:none}}
 @media(max-width:860px){.g3{grid-template-columns:1fr}}
+.tabs{display:inline-flex;gap:6px;padding:6px;background:var(--bg2);border-radius:99px;margin-top:40px}
+.tabs button{border:0;background:transparent;color:var(--mute);font:600 15px Onest,sans-serif;padding:11px 22px;border-radius:99px;cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--g2);color:#fff}
+.tp{margin-top:22px;padding:36px;border-radius:28px;background:var(--card);border:1px solid var(--line);display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center}
+.tp[hidden]{display:none}
+.tp .ico{width:64px;height:64px;font-size:30px;margin:0}
+.tp h3{font-size:24px;margin-bottom:10px}.tp p{margin:0 0 8px;color:var(--mute);max-width:40em}
+.tp .mail{display:inline-block;font:600 clamp(17px,2.4vw,26px) Unbounded,sans-serif;color:var(--g2);text-decoration:none;word-break:break-all;margin:10px 0 18px}
+.tp .row{display:flex;gap:12px;flex-wrap:wrap}.tp small{display:block;margin-top:16px;color:var(--mute);font-size:14px}
+button.btn{font:inherit;font-weight:600;cursor:pointer;border:0}button.btn.o{border:1.5px solid var(--g2)}
+@media(max-width:860px){.tp{grid-template-columns:1fr;padding:26px}}
 @media(max-width:860px){
 nav a.l{display:none}
 .hero .wrap{grid-template-columns:1fr}.logo{max-width:320px;margin:0 auto;order:-1}
