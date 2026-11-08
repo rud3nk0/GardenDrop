@@ -103,6 +103,11 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 .tp .row{display:flex;gap:12px;flex-wrap:wrap}.tp small{display:block;margin-top:16px;color:var(--mute);font-size:14px}
 button.btn{font:inherit;font-weight:600;cursor:pointer;border:0}button.btn.o{border:1.5px solid var(--g2)}
 @media(max-width:860px){.tp{grid-template-columns:1fr;padding:26px}}
+dialog{border:1px solid var(--line);border-radius:28px;background:var(--card);color:var(--ink);padding:32px;width:min(440px,92vw);box-shadow:0 40px 80px -30px rgba(0,0,0,.5)}
+dialog::backdrop{background:rgba(10,30,18,.55);backdrop-filter:blur(3px)}
+dialog h3{font-size:22px;margin-bottom:8px}dialog p{margin:0 0 20px;color:var(--mute)}
+.mp-list{display:grid;gap:10px}.mp-list .btn{text-align:center}
+.mp-x{position:absolute;top:12px;right:16px;border:0;background:transparent;color:var(--mute);font-size:28px;line-height:1;cursor:pointer}
 @media(max-width:860px){
 nav a.l{display:none}
 .hero .wrap{grid-template-columns:1fr}.logo{max-width:320px;margin:0 auto;order:-1}
